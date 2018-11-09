@@ -8,4 +8,11 @@
     color: white;
     font-size: 30px;
   }
+  &:hover {
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    .button-color {
+      color: black;
+    }
+  }
 }
