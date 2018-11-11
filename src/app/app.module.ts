@@ -7,8 +7,11 @@ import {TitleComponent} from './home/main/section-info/title/title.component';
 import {SectionInfoComponent} from './home/main/section-info/section-info.component';
 import {ButtonComponent} from './home/main/button/button.component';
 import {SectionContactComponent} from './home/main/section-contact/section-contact.component';
-import { AppRoutingModule } from './app-routing.module';
-import { PageNotFoundComponent } from './home/page-not-found/page-not-found.component';
+import {AppRoutingModule} from './app-routing.module';
+import {PageNotFoundComponent} from './home/page-not-found/page-not-found.component';
+import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './global/components/navbar/navbar.component';
+import { FooterComponent } from './global/components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -18,11 +21,14 @@ import { PageNotFoundComponent } from './home/page-not-found/page-not-found.comp
         SectionInfoComponent,
         ButtonComponent,
         SectionContactComponent,
-        PageNotFoundComponent
-    ],
+        PageNotFoundComponent,
+        NavbarComponent,
+        FooterComponent],
     imports: [
         BrowserModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NgbCollapseModule,
+        NgbModule
     ],
     providers: [],
     bootstrap: [AppComponent]
