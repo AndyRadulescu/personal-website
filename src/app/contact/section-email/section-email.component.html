@@ -1,5 +1,35 @@
-<form action="https://formspree.io/radulescu.eduard.andrei@gmail.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
+<section class="section--email">
+    <div class="container">
+        <form action="https://formspree.io/radulescu.eduard.andrei@gmail.com"
+              method="POST">
+            <p>Send your message using the form below</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-4">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" required [(ngModel)]="message.name"
+                               id="name" placeholder="Name" #name="ngModel">
+                        <span [ngClass]="{'invisible': name.valid || name.pristine}">This information is required</span>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" name="email" required [(ngModel)]="message.email"
+                               id="email" placeholder="Email" #email="ngModel">
+                        <span [ngClass]="{'invisible': name.valid || name.pristine}" class="help-block">This information is required</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" required [(ngModel)]="message.content"
+                                  id="message" rows="8" placeholder="Your message" #content="ngModel"></textarea>
+                        <span [ngClass]="{'invisible': name.valid || name.pristine}" class="help-block">This information is required</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-secondary mt-2">Send email</button>
+            </div>
+        </form>
+    </div>
+</section>

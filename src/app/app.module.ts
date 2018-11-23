@@ -10,10 +10,11 @@ import {SectionContactComponent} from './contact/section-contact/section-contact
 import {AppRoutingModule} from './app-routing.module';
 import {PageNotFoundComponent} from './home/page-not-found/page-not-found.component';
 import {NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './global/components/navbar/navbar.component';
-import { FooterComponent } from './global/components/footer/footer.component';
-import { SectionEmailComponent } from './contact/section-email/section-email.component';
-import { ContactMainComponent } from './contact/contact-main/contact-main.component';
+import {NavbarComponent} from './global/components/navbar/navbar.component';
+import {FooterComponent} from './global/components/footer/footer.component';
+import {SectionEmailComponent} from './contact/section-email/section-email.component';
+import {ContactMainComponent} from './contact/contact-main/contact-main.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -32,7 +33,8 @@ import { ContactMainComponent } from './contact/contact-main/contact-main.compon
         BrowserModule,
         AppRoutingModule,
         NgbCollapseModule,
-        NgbModule
+        NgbModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
