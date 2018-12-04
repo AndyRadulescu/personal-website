@@ -15,6 +15,8 @@ import {FooterComponent} from './global/components/footer/footer.component';
 import {SectionEmailComponent} from './contact/section-email/section-email.component';
 import {ContactMainComponent} from './contact/contact-main/contact-main.component';
 import {FormsModule} from '@angular/forms';
+import { AboutMainComponent } from './about/about-main/about-main.component';
+import { AboutTitleComponent } from './about/about-title/about-title.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import {FormsModule} from '@angular/forms';
         NavbarComponent,
         FooterComponent,
         SectionEmailComponent,
-        ContactMainComponent],
+        ContactMainComponent,
+        AboutMainComponent,
+        AboutTitleComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,

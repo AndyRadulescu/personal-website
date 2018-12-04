@@ -1,0 +1,35 @@
+@import "../../../styles/base/variables";
+
+.about--title {
+  margin-top: 100px;
+
+  .about--title__title-container {
+    font-family: monospace;
+
+    .about--title__title {
+      &::before {
+        content: "> ";
+      }
+
+      color: $darkColor;
+      font-size: 5.7vw;
+    }
+
+    .about--title__cursor {
+      font-size: 5.7vw;
+      background-color: black;
+      animation: blinker 1s linear infinite;
+    }
+
+    padding: 20% 30px 70px;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}

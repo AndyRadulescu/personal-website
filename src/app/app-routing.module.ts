@@ -4,9 +4,11 @@ import {PageNotFoundComponent} from './home/page-not-found/page-not-found.compon
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './home/main/main.component';
 import {ContactMainComponent} from './contact/contact-main/contact-main.component';
+import {AboutMainComponent} from './about/about-main/about-main.component';
 
 const appRoutes: Routes = [
     {path: 'contact', component: ContactMainComponent},
+    {path: 'about', component: AboutMainComponent},
     {path: '', component: MainComponent},
     {path: '', redirectTo: '/', pathMatch: 'full'},
     {path: '**', component: PageNotFoundComponent}
