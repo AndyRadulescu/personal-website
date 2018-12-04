@@ -15,7 +15,7 @@
                         <label for="email">Email address</label>
                         <input type="email" class="form-control" name="email" required [(ngModel)]="message.email"
                                id="email" placeholder="Email" #email="ngModel">
-                        <span [ngClass]="{'invisible': name.valid || name.pristine}" class="help-block">This information is required</span>
+                        <span [ngClass]="{'invisible': email.valid || email.pristine}" class="help-block">This information is required</span>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -23,7 +23,7 @@
                         <label for="message">Message</label>
                         <textarea class="form-control" name="message" required [(ngModel)]="message.content"
                                   id="message" rows="8" placeholder="Your message" #content="ngModel"></textarea>
-                        <span [ngClass]="{'invisible': name.valid || name.pristine}" class="help-block">This information is required</span>
+                        <span [ngClass]="{'invisible': content.valid || content.pristine}" class="help-block">This information is required</span>
                     </div>
                 </div>
             </div>
