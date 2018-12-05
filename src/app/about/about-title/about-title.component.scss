@@ -1,4 +1,5 @@
 @import "../../../styles/base/variables";
+@import "../../../styles/animation/animation";
 
 .about--title {
   margin-top: 100px;
@@ -17,19 +18,14 @@
 
     .about--title__cursor {
       font-size: 5.7vw;
-      background-color: black;
+      background-color: $darkColor;
       animation: blinker 1s linear infinite;
     }
 
-    padding: 20% 30px 70px;
+    padding: 10% 30px 70px;
   }
-}
 
-@keyframes blinker {
-  0% {
-    background-color: black;
-  }
-  100% {
-    background-color: white;
+  .about--title__body-content {
+    font-size: 24px;
   }
 }

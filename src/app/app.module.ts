@@ -17,6 +17,7 @@ import {ContactMainComponent} from './contact/contact-main/contact-main.componen
 import {FormsModule} from '@angular/forms';
 import { AboutMainComponent } from './about/about-main/about-main.component';
 import { AboutTitleComponent } from './about/about-title/about-title.component';
+import { AboutTerminalComponent } from './about/about-terminal/about-terminal.component';
 
 @NgModule({
     declarations: [
@@ -32,7 +33,8 @@ import { AboutTitleComponent } from './about/about-title/about-title.component';
         SectionEmailComponent,
         ContactMainComponent,
         AboutMainComponent,
-        AboutTitleComponent],
+        AboutTitleComponent,
+        AboutTerminalComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
