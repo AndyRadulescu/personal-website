@@ -8,12 +8,18 @@ import {Message} from './message';
 })
 export class SectionEmailComponent implements OnInit {
     public message: Message;
+    public submitted = false;
 
     constructor() {
     }
 
     ngOnInit() {
         this.message = new Message();
+    }
+
+    onSubmit(data: any) {
+        console.log(data);
+        this.submitted = true;
     }
 
 }
