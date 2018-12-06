@@ -17,6 +17,17 @@
       @media screen and (max-width: 992px) {
         font-size: 28px;
       }
+
+
+    }
+
+    @media screen and (min-width: 1400px) {
+      .about--title__title {
+        font-size: 70px;
+      }
+      .about--title__cursor {
+        font-size: 70px;
+      }
     }
 
     .about--title__cursor {
