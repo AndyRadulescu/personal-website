@@ -6,10 +6,10 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-    facebookImgSrc = '/assets/facebook-logo-white.svg';
-    linkedinImgSrc = '/assets/linkedin-logo-white.svg';
-    instagramImgSrc = '/assets/instagram-logo-white.svg';
-    githubImgSrc = '/assets/github-logo-white.png';
+    facebookImgSrc = '../../../assets/facebook-logo-white.svg';
+    linkedinImgSrc = '../../../assets/linkedin-logo-white.svg';
+    instagramImgSrc = '../../../assets/instagram-logo-white.svg';
+    githubImgSrc = '../../../assets/github-logo-white.png';
 
     constructor() {
     }
@@ -20,16 +20,16 @@ export class FooterComponent implements OnInit {
     onMouseOver(socialApp) {
         switch (socialApp) {
             case 'facebook':
-                this.facebookImgSrc = '/assets/facebook-logo.svg';
+                this.facebookImgSrc = '../../../assets/facebook-logo.svg';
                 break;
             case 'linkedin':
-                this.linkedinImgSrc = '/assets/linkedin-logo.svg';
+                this.linkedinImgSrc = '../../../assets/linkedin-logo.svg';
                 break;
             case 'instagram':
-                this.instagramImgSrc = '/assets/instagram-logo.svg';
+                this.instagramImgSrc = '../../../assets/instagram-logo.svg';
                 break;
             case 'github':
-                this.githubImgSrc = '/assets/github-logo.png';
+                this.githubImgSrc = '../../../assets/github-logo.png';
                 break;
         }
     }
@@ -37,16 +37,16 @@ export class FooterComponent implements OnInit {
     onMouseOut(socialApp) {
         switch (socialApp) {
             case 'facebook':
-                this.facebookImgSrc = '/assets/facebook-logo-white.svg';
+                this.facebookImgSrc = '../../../assets/facebook-logo-white.svg';
                 break;
             case 'linkedin':
-                this.linkedinImgSrc = '/assets/linkedin-logo-white.svg';
+                this.linkedinImgSrc = '../../../assets/linkedin-logo-white.svg';
                 break;
             case 'instagram':
-                this.instagramImgSrc = '/assets/instagram-logo-white.svg';
+                this.instagramImgSrc = '../../../assets/instagram-logo-white.svg';
                 break;
             case 'github':
-                this.githubImgSrc = '/assets/github-logo-white.png';
+                this.githubImgSrc = '../../../assets/github-logo-white.png';
                 break;
         }
     }
