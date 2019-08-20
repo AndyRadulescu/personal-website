@@ -19,6 +19,7 @@ import { AboutMainComponent } from './about/about-main/about-main.component';
 import { AboutTitleComponent } from './about/about-title/about-title.component';
 import { AboutTerminalComponent } from './about/about-terminal/about-terminal.component';
 import { ContactInfoComponent } from './contact/contact-info/contact-info.component';
+import { SiteNoticeComponent } from './site-notice/site-notice.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { ContactInfoComponent } from './contact/contact-info/contact-info.compon
         AboutMainComponent,
         AboutTitleComponent,
         AboutTerminalComponent,
-        ContactInfoComponent],
+        ContactInfoComponent,
+        SiteNoticeComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
