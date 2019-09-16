@@ -12,8 +12,8 @@ admin.initializeApp();
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'radulescu.eduard.andrei@gmail.com',
-    pass: 'yourgmailaccpassword'
+    user: 'email.service.sabrosu@gmail.com',
+    pass: 'fbyatysufdqqedcm'
   }
 });
 
@@ -24,7 +24,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
     const dest = req.query.dest;
 
     const mailOptions = {
-      from: 'Your Account Name <yourgmailaccount@gmail.com>', // Something like: Jane Doe <janedoe@gmail.com>
+      from: 'email.service.sabrosu@gmail.com', // Something like: Jane Doe <janedoe@gmail.com>
       to: dest,
       subject: 'I\'M A PICKLE!!!', // email subject
       html: `<p style="font-size: 16px;">Pickle Riiiiiiiiiiiiiiiick!!</p>
