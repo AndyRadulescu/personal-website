@@ -1,25 +1,31 @@
-import {Component, OnInit} from '@angular/core';
-import {Message} from './message';
+import { Component, OnInit } from '@angular/core';
+import EmailService from './email.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-    selector: 'app-section-email',
-    templateUrl: './section-email.component.html',
-    styleUrls: ['./section-email.component.scss']
+  selector: 'app-section-email',
+  templateUrl: './section-email.component.html',
+  styleUrls: ['./section-email.component.scss'],
+  providers: [EmailService]
 })
 export class SectionEmailComponent implements OnInit {
-    public message: Message;
-    public submitted = false;
+  public submitted = false;
+  public emailForm = new FormGroup({
+    subject: new FormControl(''),
+    from: new FormControl(''),
+    message: new FormControl('')
+  });
 
-    constructor() {
-    }
+  constructor(private readonly email: EmailService) {
+  }
 
-    ngOnInit() {
-        this.message = new Message();
-    }
+  ngOnInit() {
+  }
 
-    onSubmit(data: any) {
-        console.log(data);
-        this.submitted = true;
-    }
+  onSubmit() {
+    console.log(this.emailForm.value);
+    // this.email.sendEmail(data);
+    this.submitted = true;
+  }
 
 }
