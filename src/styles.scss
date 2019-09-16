@@ -3,3 +3,13 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+
+.title--big {
+  font-size: 7vw;
+  color: white;
+  text-shadow: 1px 2px 3px #fff;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  letter-spacing: 5px;
+  font-family: 'Modak', cursive;
+}

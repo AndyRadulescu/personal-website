@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import EmailService from './email.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-section-email',
@@ -10,9 +10,11 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class SectionEmailComponent implements OnInit {
   public submitted = false;
+  public isLoading = false;
+  public isFormInvalid = false;
   public emailForm = new FormGroup({
     subject: new FormControl(''),
-    from: new FormControl(''),
+    from: new FormControl('', Validators.email),
     message: new FormControl('')
   });
 
@@ -22,10 +24,20 @@ export class SectionEmailComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
-    console.log(this.emailForm.value);
-    // this.email.sendEmail(data);
-    this.submitted = true;
+  onSubmit(): void {
+    if (this.emailForm.status === 'INVALID') {
+      this.isFormInvalid = true;
+      return;
+    }
+    this.isFormInvalid = false;
+    this.isLoading = true;
+    this.email.sendEmail(this.emailForm.value).subscribe(() => {
+      this.isLoading = false;
+      this.submitted = true;
+    }, err => {
+      console.log(err);
+      this.isLoading = false;
+    });
   }
 
 }
