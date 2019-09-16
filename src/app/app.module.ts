@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './home/main/main.component';
-import { TitleComponent } from './home/main/section-info/title/title.component';
 import { SectionInfoComponent } from './home/main/section-info/section-info.component';
 import { SectionContactComponent } from './contact/section-contact/section-contact.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +24,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     MainComponent,
-    TitleComponent,
     SectionInfoComponent,
     SectionContactComponent,
     PageNotFoundComponent,
