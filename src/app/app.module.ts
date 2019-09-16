@@ -19,6 +19,7 @@ import { AboutTerminalComponent } from './about/about-terminal/about-terminal.co
 import { ContactInfoComponent } from './contact/contact-info/contact-info.component';
 import { SiteNoticeComponent } from './site-notice/site-notice.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectsComponent } from './home/main/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutTitleComponent,
     AboutTerminalComponent,
     ContactInfoComponent,
-    SiteNoticeComponent],
+    SiteNoticeComponent,
+    ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
