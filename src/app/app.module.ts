@@ -20,6 +20,7 @@ import { ContactInfoComponent } from './contact/contact-info/contact-info.compon
 import { SiteNoticeComponent } from './site-notice/site-notice.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './home/main/projects/projects.component';
+import { GlobalStyleDirective } from './global/global-style.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProjectsComponent } from './home/main/projects/projects.component';
     AboutTerminalComponent,
     ContactInfoComponent,
     SiteNoticeComponent,
-    ProjectsComponent],
+    ProjectsComponent,
+    GlobalStyleDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,

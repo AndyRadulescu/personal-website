@@ -15,8 +15,11 @@
 
   .about-me__title {
     font-size: 32px;
-    -webkit-text-stroke: 1px #ffdb4d;
+    //-webkit-text-stroke: 1px #ffdb4d;
+    -webkit-text-stroke: 2px #312b96;
+    //color: #96276f;
     color: #96276f;
+    letter-spacing: 1.5px;
     font-family: 'Modak', cursive;
   }
 
