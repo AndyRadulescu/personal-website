@@ -20,13 +20,12 @@ export class GlobalStyleDirective {
   }
 
   private getColorAccordingToRoute(url: string): string {
-    switch (url) {
-      case '/contact':
-        return 'bg-dark';
-      case '/about':
-        return 'bg-danger';
-      default:
-        return 'bg-info';
+    if (url.includes('/contact')) {
+      return 'bg-dark';
+    } else if (url.includes('/about')) {
+      return 'bg-danger';
+    } else {
+      return 'bg-info';
     }
   }
 

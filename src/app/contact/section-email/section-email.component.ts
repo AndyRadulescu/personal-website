@@ -34,9 +34,11 @@ export class SectionEmailComponent implements OnInit {
     this.email.sendEmail(this.emailForm.value).subscribe(() => {
       this.isLoading = false;
       this.submitted = true;
+      this.emailForm.reset();
     }, err => {
       console.log(err);
       this.isLoading = false;
+      this.emailForm.reset();  // TODO: take this out in the future (shouldn't be her) => Enters catch because of firebase response
     });
   }
 
