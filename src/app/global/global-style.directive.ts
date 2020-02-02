@@ -7,7 +7,6 @@ import { NavigationEnd, Router } from '@angular/router';
 export class GlobalStyleDirective {
 
   constructor(private readonly router: Router, el: ElementRef) {
-    console.log('class directive triggered');
     this.router.events.subscribe((data: any) => {
       if (data instanceof NavigationEnd) {
         const color = this.getColorAccordingToRoute(data.url);

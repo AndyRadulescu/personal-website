@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { SectionContactComponent } from './contact/section-contact/section-contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './global/components/navbar/navbar.component';
-import { FooterComponent } from './global/components/footer/footer.component';
 import { SectionEmailComponent } from './contact/section-email/section-email.component';
 import { ContactMainComponent } from './contact/contact-main/contact-main.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -16,24 +14,21 @@ import { AboutTerminalComponent } from './about/about-terminal/about-terminal.co
 import { ContactInfoComponent } from './contact/contact-info/contact-info.component';
 import { SiteNoticeComponent } from './site-notice/site-notice.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GlobalStyleDirective } from './global/global-style.directive';
 import { MainModule } from './home/main/main.module';
 import { PageNotFoundModule } from './home/page-not-found/page-not-found.module';
+import { GlobalModule } from './global/global.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SectionContactComponent,
-    NavbarComponent,
-    FooterComponent,
     SectionEmailComponent,
     ContactMainComponent,
     AboutMainComponent,
     AboutTitleComponent,
     AboutTerminalComponent,
     ContactInfoComponent,
-    SiteNoticeComponent,
-    GlobalStyleDirective
+    SiteNoticeComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +38,7 @@ import { PageNotFoundModule } from './home/page-not-found/page-not-found.module'
     ReactiveFormsModule,
     PageNotFoundModule,
     NgbModule,
+    GlobalModule,
     MainModule
   ],
   providers: [],
