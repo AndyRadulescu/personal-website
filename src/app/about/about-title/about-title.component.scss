@@ -17,8 +17,6 @@
       @media screen and (max-width: 992px) {
         font-size: 28px;
       }
-
-
     }
 
     @media screen and (min-width: 1400px) {
@@ -32,6 +30,12 @@
 
     .about--title__cursor {
       font-size: 5.7vw;
+      @media screen and (min-width: 1400px) {
+        font-size: 70px;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 28px;
+      }
       background-color: $darkColor;
       animation: blinker 1s linear infinite;
     }
