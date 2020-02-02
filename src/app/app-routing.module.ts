@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageNotFoundComponent } from './home/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './home/main/main.component';
-import { ContactMainComponent } from './contact/contact-main/contact-main.component';
-import { AboutMainComponent } from './about/about-main/about-main.component';
+import { MainComponent } from './main/main.component';
 import { SiteNoticeComponent } from './site-notice/site-notice.component';
 
 const appRoutes: Routes = [
   { path: 'site-notice', component: SiteNoticeComponent },
-  { path: 'contact', component: ContactMainComponent },
-  { path: 'about', component: AboutMainComponent },
   { path: '', component: MainComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
@@ -23,7 +19,7 @@ const appRoutes: Routes = [
       appRoutes
     )
   ],
-  exports: [RouterModule]
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule {
 }

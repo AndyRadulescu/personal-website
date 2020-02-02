@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { SectionInfoModule } from './section-info/section-info.module';
 import { ProjectsModule } from './projects/projects.module';
-import { MainComponent } from './main.component';
+import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
-    MainComponent
+    HomeComponent
   ],
   imports: [
     SectionInfoModule,
     ProjectsModule
   ],
   exports: [
-    MainComponent
+    HomeComponent
   ]
 })
-export class MainModule {
+export class HomeModule {
 }

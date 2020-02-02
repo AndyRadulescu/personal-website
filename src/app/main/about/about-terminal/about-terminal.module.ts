@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { AboutMainComponent } from '../about-main/about-main.component';
+import { AboutTerminalComponent } from './about-terminal.component';
 
 @NgModule({
   declarations: [
-    AboutMainComponent
+    AboutTerminalComponent
   ],
   exports: [
-    AboutMainComponent
+    AboutTerminalComponent
   ]
 })
 export class AboutTerminalModule {
