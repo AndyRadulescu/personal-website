@@ -17,7 +17,7 @@ import EmailService from './email.service';
   ]
 })
 export class SectionEmailModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<SectionEmailModule> {
     return {
       ngModule: SectionEmailModule,
       providers: [
